@@ -28,4 +28,7 @@ ansible-playbook ansible/stig.yml -i .vagrant/provisioners/ansible/inventory/vag
 
 # Check STIG Hardening Status - 290 successful, 32 failures, 96 skipped
 inspec exec https://github.com/mitre/microsoft-windows-server-2019-stig-baseline.git -t winrm://127.0.0.1:55985 --user vagrant --password vagrant
+
+# Check for Windows Patches
+inspec exec https://github.com/dev-sec/windows-patch-baseline.git -t winrm://127.0.0.1:55985 --user vagrant --password vagrant
 ```

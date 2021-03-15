@@ -1,0 +1,13 @@
+---
+- name: Harden Windows for CIS
+  hosts: all
+  roles:
+    - Windows-2019-CIS
+  vars:
+   - rule_2_2_1: false
+   - rule_2_2_4: false
+   - rule_2_2_14: false
+   - rule_2_2_16: false
+   - rule_2_2_28: false
+   - rule_2_2_35: false
+   - rule_2_2_39: false
