@@ -1,0 +1,5 @@
+---
+- name: Windows 2019 Test
+  hosts: all
+  tasks:
+    - win_ping:

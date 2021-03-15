@@ -1,0 +1,7 @@
+---
+- name: Harden Windows
+  hosts: all
+  roles:
+    - Windows-2019-STIG
+  vars:
+    wn19_ur_000020: false
