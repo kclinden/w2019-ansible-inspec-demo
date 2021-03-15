@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "StefanScherer/windows_2019"
   config.vm.guest = :windows 
   config.vm.define "w2019"
-  config.vm.hostname = "w2019-test"
+  config.vm.hostname = "w2019"
   config.vm.provider "vmware_desktop" do |v|
     #v.gui = true
     v.vmx["memsize"] = "4096"
